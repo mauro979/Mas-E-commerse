@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #003366);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+h2{
+    text-align: center;
+}
+
+.crear-cuenta-container{
+    background-color: aliceblue;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 1rem;
+    border-radius: 5%;
+    box-shadow: rgb(16, 21, 32) 5px 5px 5px 5px;
+}
+
+form{
+    display: flex;  
+    flex-direction: column;
+    gap: .7rem;
+}
+
+input{
+    padding: .5rem;
+    transition: background-color .2s;
+    background-color: #fff;
+    border-radius: 10px;
+    /*border-radius: 10px;*/
+}
+
+input:hover{
+    background-color: #8c9caf1e;
+    transition: background-color .2s;
+
+}
+
+#fileName{
+    display: none;
+}
+
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#drop_zone {
+    border: 2px dashed #4488ee;
+    padding: 20px;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+    color: #555;
+}
+
+#Create-account-button{
+    transition: background-color .2s;
+    border-radius: 10px;
+}
+
+#Create-account-button:hover{
+    background-color: #2e45631e;
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+
+#fileInput {
+    font: 14px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: .5rem .75rem;
+}
+
+#fileInput:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1064px) {
+    .crear-cuenta-container{
+        padding: 3rem;
+        width: fit-content;
+    }
+
+    input{
+        width: auto;
+    }
+
+    #Create-account-button{
+        width: auto;
+    }
+
+    #drop_zone{
+        width: calc(100% - 20%);
+    }
+}
+
+#carga{
+    display: none;
+}

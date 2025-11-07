@@ -1,0 +1,99 @@
+.producto-modelo-agregar{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0.8rem;
+    width: clamp(4.8rem, 24rem, 80rem);
+    align-self: center;
+    overflow: hidden;
+    border: #000 1px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.producto-modelo-agregar-imagen {
+    display: flex;
+    flex-direction: column;
+    border: #000 solid 1.5px;
+}
+
+.producto-modelo-agregar-imagen{
+   width: clamp(4.8rem, 24rem, 80rem);
+   height: clamp(4.8rem, 14rem, 30rem);
+   overflow: hidden;
+  /* background-image: url(test.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .producto-modelo-agregar{
+    width: clamp(5rem, 10rem, 20rem);
+    height: clamp(5rem, 20rem, 20rem);
+    font-size: .8rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .producto-modelo-agregar-imagen{
+    width: clamp(3rem, 8rem, 10rem);
+    height: clamp(4.8rem, 5rem, 10rem);
+    margin-top: .4rem;
+  }
+
+  .producto-modelo-agregar{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-inline: 0;
+  }
+
+  .producto-modelo-agregar-titulo,
+  .producto-modelo-agregar-descripcion,
+  .producto-modelo-agregar-precio,
+  .producto-modelo-agregar-stock {
+    text-align: center;
+  }
+}
+
+
+/* @media screen and (max-width: 760px) {
+  #producto-modelo-agregar{
+    width: clamp(14rem, 20rem, 25rem);
+  }
+
+  .producto-modelo-agregar-imagen{
+    width: clamp(14rem, 19rem, 25rem);
+    height: clamp(4.8rem, 15rem, 30rem);
+    margin-top: .4rem;
+  }
+
+  .producto-modelo-agregar{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-inline: 0;
+  }
+
+  .producto-modelo-agregar-imagen {
+    max-width: 100%;
+  }
+
+  .producto-modelo-agregar-imagen .imagen {
+    width: clamp(4rem, 80%, 20rem);
+    height: 10rem;
+  }
+
+  .producto-modelo-agregar-titulo,
+  .producto-modelo-agregar-descripcion,
+  .producto-modelo-agregar-precio,
+  .producto-modelo-agregar-stock {
+    text-align: center;
+  }
+} */

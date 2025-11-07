@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administracion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <script src="products.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <header>
+        <div class="boton-menu-desplegable"><span class="material-icons">menu</span></div>
+        <div class="titulo-header"><h1>Panel de Administracion</h1></div>
+        <div class="logo logo-header nav-option"></div>
+    </header>
+    
+    <!-- navbar de la izquierda -->
+    <nav id="navbar">
+        <div class="logo nav-option" id="logo-navbar"></div>
+        <div class="general nav-option "><a href="#grafos">General <span class="material-icons">bar_chart</span></a> </div>
+        <div class="agg_productos nav-option"><a href="#agregar-productos">Agregar productos <span class="material-icons">add_circle</span></a></div>
+        <div class="eliminar_productos nav-option"><a href="#eliminar-productos">Eliminar productos <span class="material-icons">delete</span></a></div>
+        <div class="modificar_productos nav-option">Modificar productos</div>
+        <div class="ver_users nav-option">Ver usuarios</div>
+    </nav>
+    <div id="grafos">ewr</div>
+
+    <!-- seccion para agregar productos -->
+    <section id="agregar-productos">
+        <h2 id="agregar-productos-h2">Agregar Productos:</h2>
+        <div id="producto-modelo-agregar">
+            <div class="producto-modelo-agregar-imagen">
+                <label for="fileInput" class="imagen"></label>
+                <input type="file" id="fileInput" accept="image/*" />
+            </div>
+            <h2 class="producto-modelo-agregar-titulo"><p id="Nombre-producto-content" contenteditable="true">Nombre del producto</p></h2>
+            <div class="producto-modelo-agregar-descripcion" contenteditable="true">Escribe aquí los detalles del producto: qué es, para qué sirve, sus características principales y cualquier información que ayude al cliente a conocerlo mejor.</div>
+            <h5 class="producto-modelo-agregar-precio" contenteditable="true">$precio</h5>
+            <h6 class="producto-modelo-agregar-stock" contenteditable="true">Disponibilidad</h6>
+            <button id="Crear">Crear</button>
+        </div>
+    </section>
+    
+    <!-- seccion para eliminar productos -->
+     <section id="eliminar-productos">
+        <h2 id="eliminar-producto-h2">Eliminar Productos</h2>
+        <div class="buscar-producto-eliminar-container">
+            <input type="search" id="input-buscar-producto-para-eliminar" placeholder="Introduzca nombre del producto a eliminar">
+            <button id="boton-buscar-producto-para-eliminar" class="material-icons"><span>search</span></button>
+        </div>
+            <div id="modelo-producto-eliminar-container">
+                
+                <div id="eliminar-producto-imagen"></div>
+                <h2 class="producto-modelo-eliminar-titulo"></h2>
+                <div class="producto-modelo-eliminar-descripcion"></div>
+                <h5 class="producto-modelo-eliminar-precio" ></h5>
+                <h6 class="producto-modelo-eliminar-stock" ></h6>
+                <button id="Eliminar">Elimiar</button>
+            </div>
+     </section>
+</body>
+</html>

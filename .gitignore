@@ -1,0 +1,10 @@
+#ignoramos todos los archivos q no queremos q vallan al repo
+cursito_facturas
+test
+data
+.venv
+.vscode
+__pycache__
+automatizacion.sh
+a.sh
+k.sh

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend user</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles_products.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+    <header>
+        <div class="menu-button material-icons"><span>menu</span></div>
+        <div class="buscar-div">
+            <input type="search" placeholder="Buscar" id="input-busqueda">
+            <button class="material-icons" id="boton-busqueda"><span>search</span></button>
+        </div>
+        <div class="user-logo material-icons"><span>account_circle</span></div>
+    </header>
+    
+    <!-- contenedor en donde estaran los productos de la tienda -->    
+    <section id="products-flex-container"></section>
+</body>
+</html>

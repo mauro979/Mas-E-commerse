@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+    <div class="flex-container">
+        <div class="crear-cuenta-container">
+            <h2>Login Admin</h2>
+            <form>
+                <label for="name-input">Name:</label>
+                    <input type="text" placeholder="juanito" id="name-input" required>
+                <label for="password-input">Password:</label>
+                    <input type="password" id="password-input" placeholder="12345" required>
+                <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="juanito@gmail.com">            
+                <input type="button" id="Create-account-button" value="Confirmar">
+            </form>
+        </div>
+    </div>
+    <div id="carga"><div>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/grid.js"></script>
+        
+            <l-grid
+            size="70"
+            speed="1.5"
+            color="white" 
+            ></l-grid>
+    </div>
+</body>
+</html>
